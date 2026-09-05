@@ -1,5 +1,7 @@
 # Base Image - ARG must come before any FROM that uses it
-ARG BASE_IMAGE=ghcr.io/ublue-os/bluefin-dx:latest
+
+ARG BASE_IMAGE=ghcr.io/ublue-os/bluefin-nvidia-open:stable
+
 
 # Allow build scripts to be referenced without being copied into the final image
 FROM scratch AS ctx
@@ -15,7 +17,7 @@ FROM ${BASE_IMAGE}
 #
 # ... and so on, here are more base images
 # Universal Blue Images: https://github.com/orgs/ublue-os/packages
-# Fedora base image: quay.io/fedora/fedora-bootc:41
+# Fedora base image: quay.io/fedora/f:qedora-bootc:41
 # CentOS base images: quay.io/centos-bootc/centos-bootc:stream10
 
 ### [IM]MUTABLE /opt
