@@ -32,10 +32,9 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - image_name: "hyprblue-open-video"
-            image_alias: "hyprblue"
-            base_image: "ghcr.io/ublue-os/bluefin-dx:latest"
-            image_desc: "HyprBlue Custom Image with open video drivers, based on bluefin-dx"
+          - image_name: hyprblue-nvidia-open
+            base_image: ghcr.io/ublue-os/bluefin-nvidia-open:stable
+            image_desc: "HyprBlue Custom Image with NVIDIA open drivers, based on bluefin-nvidia-open"
           - image_name: "hyprbazzite-open-video"
             image_alias: ""
             base_image: "ghcr.io/ublue-os/bazzite:latest"
