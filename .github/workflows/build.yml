@@ -68,7 +68,7 @@ jobs:
 
       # This is optional, but if you see that your builds are way too big for the runners, you can enable this by uncommenting the following lines:
       - name: Maximize build space
-        uses: ublue-os/remove-unwanted-software@master
+        uses: ublue-os/remove-unwanted-software@main
         with:
           remove-codeql: true
 
