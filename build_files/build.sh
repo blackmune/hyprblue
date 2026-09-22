@@ -113,7 +113,7 @@ HYPR_DEPS=(
 	wallust
 	waybar
 	wget2
-	wireplumber
+	#wireplumber
 	wl-clipboard
 	wl-clip-persist
 	wlogout
