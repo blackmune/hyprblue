@@ -91,6 +91,7 @@ HYPR_DEPS=(
 	mpv
 	# mpv-mpris
 	network-manager-applet
+	newt
 	nodejs
 	# nvidia-dkms
 	# nvidia-utils
